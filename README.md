@@ -1,6 +1,6 @@
 # Ti-Loki
 
-
+[![GitHub version](https://badge.fury.io/gh/ianko%2Fti-loki.svg)](https://badge.fury.io/gh/ianko%2Fti-loki) [![npm version](https://badge.fury.io/js/ti-loki.svg)](https://badge.fury.io/js/ti-loki) 
 
 ## Overview
 
@@ -38,19 +38,28 @@ Or download the latest [zip file](https://github.com/ianko/ti-loki/tree/master/d
 
 
 ## Usage
-Creating a database :
+
+
+Require:
+
+```javascript
+var Loki = require('ti-loki');
+```
+
+
+Creating a database:
 
 ```javascript
 var db = new Loki('example.db');
 ```
 
-Add a collection :
+Add a collection:
 
 ```javascript
 var users = db.addCollection('users');
 ```
 
-Insert documents :
+Insert documents:
 
 ```javascript
 users.insert({
@@ -63,7 +72,7 @@ users.insert({
 users.insert([{ name: 'Thor', age: 35}, { name: 'Loki', age: 30}]);
 ```
 
-Simple find query :
+Simple find query:
 
 ```javascript
 var results = users.find({ age: {'$gte': 35} });
@@ -71,7 +80,7 @@ var results = users.find({ age: {'$gte': 35} });
 var odin = users.findOne({ name:'Odin' });
 ```
 
-Simple where query :
+Simple where query:
 
 ```javascript
 var results = users.where(function(obj) {
@@ -79,13 +88,13 @@ var results = users.where(function(obj) {
 });
 ```
 
-Simple Chaining :
+Simple Chaining:
 
 ```javascript
 var results = users.chain().find({ age: {'$gte': 35} }).simplesort('name').data();
 ```
 
-Simple named transform :
+Simple named transform:
 
 ```javascript
 users.addTransform('progeny', [
