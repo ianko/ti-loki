@@ -3,8 +3,8 @@
 | LOKI              |
 -------------------*/
 
-var Loki                = require('lokijs')
-var LokiTitaniumAdapter = require('./loki-titanium-adapter')
+var Loki                = require('lokijs');
+var LokiTitaniumAdapter = require('./loki-titanium-adapter');
 
 function TiLoki(dbname, options) {
   options = options || {};
@@ -14,6 +14,6 @@ function TiLoki(dbname, options) {
   }
 
   return new Loki(dbname, options);
-};
+}
 
 module.exports = TiLoki;

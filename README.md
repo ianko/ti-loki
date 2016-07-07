@@ -1,6 +1,6 @@
 # Ti-Loki
 
-[![GitHub version](https://badge.fury.io/gh/ianko%2Fti-loki.svg)](https://badge.fury.io/gh/ianko%2Fti-loki) [![npm version](https://badge.fury.io/js/ti-loki.svg)](https://badge.fury.io/js/ti-loki) 
+[![GitHub version](https://badge.fury.io/gh/ianko%2Fti-loki.svg)](https://badge.fury.io/gh/ianko%2Fti-loki) [![npm version](https://badge.fury.io/js/ti-loki.svg)](https://badge.fury.io/js/ti-loki) [![bitHound Code](https://www.bithound.io/github/ianko/ti-loki/badges/code.svg)](https://www.bithound.io/github/ianko/ti-loki)
 
 ## Overview
 

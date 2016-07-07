@@ -9,7 +9,7 @@
  */
 function LokiTitaniumAdapter() {
   this.databases = {};
-};
+}
 
 /**
  * _getFile() - Get the file reference, or create a new one
