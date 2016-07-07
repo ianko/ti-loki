@@ -1,0 +1,32 @@
+{
+  "name": "ti-loki",
+  "version": "1.0.0",
+  "description": "LokiJS in-memory database persistence on Titanium",
+  "main": "src/ti-loki.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianko/ti-loki.git"
+  },
+  "keywords": [
+    "loki",
+    "lokijs",
+    "titanium",
+    "adapter",
+    "titaniumifier"
+  ],
+  "author": "Ianko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ianko/ti-loki/issues"
+  },
+  "homepage": "https://github.com/ianko/ti-loki#readme",
+  "titaniumManifest": {
+    "guid": "5447adb9-52ad-0421-e2ed-50f8d8fec76a"
+  },
+  "dependencies": {
+    "lokijs": "^1.4.1"
+  }
+}
