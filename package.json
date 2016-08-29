@@ -1,6 +1,6 @@
 {
   "name": "ti-loki",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "LokiJS in-memory database persistence on Titanium",
   "main": "src/ti-loki.js",
   "scripts": {

@@ -55,7 +55,13 @@ LokiTitaniumAdapter.prototype.loadDatabase = function loadDatabase(dbname, callb
 LokiTitaniumAdapter.prototype.saveDatabase = function saveDatabase(dbname, dbstring, callback) {
     var file = this._getFile(dbname);
 
-    callback(file.write(dbstring));
+    try {
+      file.write(dbstring)
+      callback();
+    }
+    catch (ex) {
+      callback(ex);
+    }
   };
 
 /**
@@ -72,7 +78,13 @@ LokiTitaniumAdapter.prototype.deleteDatabase = function deleteDatabase(dbname, c
       return callback(new Error('File not exists'));
     }
 
-    callback(file.deleteFile());
+    try {
+      file.deleteFile();
+      callback();
+    }
+    catch (ex) {
+      callback(ex);
+    }
 
   };
 
